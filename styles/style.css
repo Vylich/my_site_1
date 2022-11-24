@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation__link:hover {
     font-weight: 700;
     font-size: 30px;
-    color: rgb(47, 255, 117)
+    color: rgb(47, 255, 117);
 }
 
 /* Section */
@@ -157,16 +157,67 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     list-style-type: none;
     max-width: 206px;
-    height: 360px;
+    height: 270px;
     overflow: hidden;
     border: 1px solid #040413;
     background-color: #ffffff;
+    transition: .3s;
+}
+.card__item:hover {
+    height: 360px;
+    border: 1px solid rgb(47, 255, 117);
+    border-radius: 50px;
 }
 
 .item__link {
     text-decoration: none;
 }
 .item__image {
-    
+    filter: blur(5px);
+    transition: .3s;
+}
+.item__image:hover {
+    filter: blur(0);
 
+
+}
+
+/* footer */
+.footer {
+    border: 1px solid #ffffff;
+    border-radius: 0 0 50px 50px;
+    height: 150px;
+    position: relative;
+
+}
+.footer__list {
+    display: flex;
+    justify-content: center;
+    gap: 100px
+}
+.footer__item {
+
+}
+.footer__icon {
+    font-size: 50px;
+    color: #ffffff;
+    transition: .2s;
+}
+.footer__icon:hover {
+    font-size: 70px;
+    color: rgb(47, 255, 117);
+}
+.created__at {
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 120px;
+    left: 690px;
+}
+.created__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+.created__link:hover {
+    color: rgb(47, 255, 117);
 }
